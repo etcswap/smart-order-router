@@ -69,6 +69,10 @@ export const ID_TO_CHAIN_ID = (id: number): ChainId => {
       return ChainId.CELO;
     case 44787:
       return ChainId.CELO_ALFAJORES;
+    case 61:
+      return ChainId.CLASSIC;
+    case 63:
+      return ChainId.CLASSIC_MORDOR;
     case 100:
       return ChainId.GNOSIS;
     case 1284:
@@ -96,6 +100,8 @@ export enum ChainName {
   POLYGON_MUMBAI = 'polygon-mumbai',
   CELO = 'celo-mainnet',
   CELO_ALFAJORES = 'celo-alfajores',
+  CLASSIC = 'classic-mainnet',
+  CLASSIC_MORDOR = 'classic-mordor',
   GNOSIS = 'gnosis-mainnet',
   MOONBEAM = 'moonbeam-mainnet',
   BNB = 'bnb-mainnet',
@@ -225,6 +231,10 @@ export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
       return ChainName.CELO;
     case 44787:
       return ChainName.CELO_ALFAJORES;
+    case 61:
+      return ChainName.CLASSIC;
+    case 63:
+      return ChainName.CLASSIC_MORDOR;
     case 100:
       return ChainName.GNOSIS;
     case 1284:
@@ -365,6 +375,20 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
     18,
     'CELO',
     'Celo native asset'
+  ),
+  [ChainId.CLASSIC]: new Token(
+    ChainId.CLASSIC,
+    '0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a',
+    18,
+    'WETC',
+    'Wrapped Ether'
+  ),
+  [ChainId.CLASSIC_MORDOR]: new Token(
+    ChainId.CLASSIC_MORDOR,
+    '0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a',
+    18,
+    'WETC',
+    'Wrapped Ether'
   ),
   [ChainId.GNOSIS]: new Token(
     ChainId.GNOSIS,

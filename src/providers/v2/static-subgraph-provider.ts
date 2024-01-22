@@ -36,6 +36,8 @@ const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.POLYGON_MUMBAI]: [],
   [ChainId.CELO]: [],
   [ChainId.CELO_ALFAJORES]: [],
+  [ChainId.CLASSIC]: [],
+  [ChainId.CLASSIC_MORDOR]: [],
   [ChainId.GNOSIS]: [],
   [ChainId.MOONBEAM]: [],
   [ChainId.BNB]: [],

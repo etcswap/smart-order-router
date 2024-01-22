@@ -233,7 +233,7 @@ export class V2HeuristicGasModelFactory extends IV2GasModelFactory {
 
     if (!usdTokens) {
       throw new Error(
-        `Could not find a USD token for computing gas costs on ${chainId}`
+        `v2-heuristic-gas-model: Could not find a USD token for computing gas costs on ${chainId}`
       );
     }
 

@@ -423,7 +423,7 @@ export async function getBestSwapRouteBy(
     // They should all be pegged, and this is just an estimate, so we do a merge
     // to an arbitrary stable.
     throw new Error(
-      `Could not find a USD token for computing gas costs on ${chainId}`
+      `best-swap-route: Could not find a USD token for computing gas costs on ${chainId}`
     );
   }
   const usdToken = usdGasTokensByChain[chainId]![0]!;

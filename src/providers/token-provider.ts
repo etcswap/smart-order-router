@@ -445,6 +445,24 @@ export const CEUR_CELO_ALFAJORES = new Token(
   'Celo Euro Stablecoin'
 );
 
+// Ethereum Classic Tokens
+export const USDC_CLASSIC = new Token(
+  ChainId.CLASSIC,
+  '0xD333787e69DbfC47E67C59441e392Eb530b3DC19', // TODO: add address
+  6,
+  'USDC',
+  'USDC'
+);
+
+// Ethereum Classic Mordor Tokens
+export const USDC_CLASSIC_MORDOR = new Token(
+  ChainId.CLASSIC_MORDOR,
+  '0xD333787e69DbfC47E67C59441e392Eb530b3DC19',
+  6,
+  'USDC',
+  'USDC'
+);
+
 // Avalanche Tokens
 export const DAI_AVAX = new Token(
   ChainId.AVALANCHE,

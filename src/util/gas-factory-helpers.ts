@@ -104,7 +104,7 @@ export async function getHighestLiquidityV3USDPool(
 
   if (!usdTokens) {
     throw new Error(
-      `Could not find a USD token for computing gas costs on ${chainId}`
+      `gas-factory-helpers: Could not find a USD token for computing gas costs on ${chainId}`
     );
   }
 

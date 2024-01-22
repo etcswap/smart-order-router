@@ -13,6 +13,8 @@ export const V3_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...constructSameAddressMap(FACTORY_ADDRESS),
   [ChainId.CELO]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO].v3CoreFactoryAddress,
   [ChainId.CELO_ALFAJORES]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO_ALFAJORES].v3CoreFactoryAddress,
+  [ChainId.CLASSIC]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC].v3CoreFactoryAddress,
+  [ChainId.CLASSIC_MORDOR]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC_MORDOR].v3CoreFactoryAddress,
   [ChainId.OPTIMISM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.OPTIMISM_GOERLI].v3CoreFactoryAddress,
   [ChainId.SEPOLIA]: CHAIN_TO_ADDRESSES_MAP[ChainId.SEPOLIA].v3CoreFactoryAddress,
   [ChainId.ARBITRUM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.ARBITRUM_GOERLI].v3CoreFactoryAddress,
@@ -27,6 +29,8 @@ export const QUOTER_V2_ADDRESSES: AddressMap = {
   ...constructSameAddressMap('0x61fFE014bA17989E743c5F6cB21bF9697530B21e'),
   [ChainId.CELO]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO].quoterAddress,
   [ChainId.CELO_ALFAJORES]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO_ALFAJORES].quoterAddress,
+  [ChainId.CLASSIC]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC].quoterAddress,
+  [ChainId.CLASSIC_MORDOR]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC_MORDOR].quoterAddress,
   [ChainId.OPTIMISM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.OPTIMISM_GOERLI].quoterAddress,
   [ChainId.SEPOLIA]: CHAIN_TO_ADDRESSES_MAP[ChainId.SEPOLIA].quoterAddress,
   [ChainId.ARBITRUM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.ARBITRUM_GOERLI].quoterAddress,
@@ -46,6 +50,8 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
   ...constructSameAddressMap('0x1F98415757620B543A52E61c46B32eB19261F984'),
   [ChainId.CELO]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO].multicallAddress,
   [ChainId.CELO_ALFAJORES]: CHAIN_TO_ADDRESSES_MAP[ChainId.CELO_ALFAJORES].multicallAddress,
+  [ChainId.CLASSIC]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC].multicallAddress,
+  [ChainId.CLASSIC_MORDOR]: CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC_MORDOR].multicallAddress,
   [ChainId.OPTIMISM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.OPTIMISM_GOERLI].multicallAddress,
   [ChainId.SEPOLIA]: CHAIN_TO_ADDRESSES_MAP[ChainId.SEPOLIA].multicallAddress,
   [ChainId.ARBITRUM_GOERLI]: CHAIN_TO_ADDRESSES_MAP[ChainId.ARBITRUM_GOERLI].multicallAddress,
@@ -59,6 +65,12 @@ export const UNISWAP_MULTICALL_ADDRESSES: AddressMap = {
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) : string => {
   if (chainId == ChainId.BNB) {
     return BNB_SWAP_ROUTER_02_ADDRESS;
+  }
+  if (chainId == ChainId.CLASSIC) {
+    return CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC].swapRouter02Address!;
+  }
+  if (chainId == ChainId.CLASSIC_MORDOR) {
+    return CHAIN_TO_ADDRESSES_MAP[ChainId.CLASSIC_MORDOR].swapRouter02Address!;
   }
   return '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
 };
@@ -162,5 +174,19 @@ export const WETH9: {
     18,
     'WETH',
     'Wrapped Ether'
-  )
+  ),
+  [ChainId.CLASSIC]: new Token(
+    ChainId.CLASSIC,
+    '0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a',
+    18,
+    'WETC',
+    'Wrapped Ether'
+  ),
+  [ChainId.CLASSIC_MORDOR]: new Token(
+    ChainId.CLASSIC_MORDOR,
+    '0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a',
+    18,
+    'WETC',
+    'Wrapped Ether'
+  ),
 };

@@ -16,6 +16,8 @@ export declare enum ChainName {
     POLYGON_MUMBAI = "polygon-mumbai",
     CELO = "celo-mainnet",
     CELO_ALFAJORES = "celo-alfajores",
+    CLASSIC = "classic-mainnet",
+    CLASSIC_MORDOR = "classic-mordor",
     GNOSIS = "gnosis-mainnet",
     MOONBEAM = "moonbeam-mainnet",
     BNB = "bnb-mainnet",
