@@ -3,7 +3,6 @@
 yalc.lock
 .nyc_output
 .DS_Store
-build/
 node_modules
 src/**.js
 coverage
