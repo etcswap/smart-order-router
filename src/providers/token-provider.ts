@@ -448,10 +448,10 @@ export const CEUR_CELO_ALFAJORES = new Token(
 // Ethereum Classic Tokens
 export const USDC_CLASSIC = new Token(
   ChainId.CLASSIC,
-  '0xD333787e69DbfC47E67C59441e392Eb530b3DC19', // TODO: add address
+  '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798', // TODO: add address
   6,
-  'USDC',
-  'USDC'
+  'SBC',
+  'SBC'
 );
 
 // Ethereum Classic Mordor Tokens
