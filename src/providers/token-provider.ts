@@ -448,10 +448,10 @@ export const CEUR_CELO_ALFAJORES = new Token(
 // Ethereum Classic Tokens
 export const USDC_CLASSIC = new Token(
   ChainId.CLASSIC,
-  '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798', // SBC address
+  '', // TODO axelar address
   6,
-  'SBC',
-  'SBC'
+  'USDC',
+  'USDC'
 );
 
 // Ethereum Classic Tokens
