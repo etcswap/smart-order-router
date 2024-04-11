@@ -448,19 +448,28 @@ export const CEUR_CELO_ALFAJORES = new Token(
 // Ethereum Classic Tokens
 export const USDC_CLASSIC = new Token(
   ChainId.CLASSIC,
-  '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798', // TODO: add address
+  '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798', // SBC address
   6,
   'SBC',
   'SBC'
 );
 
+// Ethereum Classic Tokens
+export const USC_CLASSIC = new Token(
+  ChainId.CLASSIC,
+  '0xDE093684c796204224BC081f937aa059D903c52a', // USC address
+  6,
+  'USC',
+  'USC'
+);
+
 // Ethereum Classic Mordor Tokens
 export const USDC_CLASSIC_MORDOR = new Token(
   ChainId.CLASSIC_MORDOR,
-  '0xD333787e69DbfC47E67C59441e392Eb530b3DC19',
+  '0xDE093684c796204224BC081f937aa059D903c52a',
   6,
-  'USDC',
-  'USDC'
+  'USC',
+  'USC'
 );
 
 // Avalanche Tokens

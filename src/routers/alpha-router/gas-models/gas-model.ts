@@ -36,6 +36,7 @@ import {
   USDT_OPTIMISM_GOERLI,
   WBTC_GOERLI,
   USDC_CLASSIC,
+  USC_CLASSIC,
   USDC_CLASSIC_MORDOR
 } from '../../../providers/token-provider';
 import { IV2PoolProvider } from '../../../providers/v2/pool-provider';
@@ -68,7 +69,7 @@ export const usdGasTokensByChain: { [chainId in ChainId]?: Token[] } = {
   [ChainId.POLYGON_MUMBAI]: [DAI_POLYGON_MUMBAI],
   [ChainId.CELO]: [CUSD_CELO],
   [ChainId.CELO_ALFAJORES]: [CUSD_CELO_ALFAJORES],
-  [ChainId.CLASSIC]: [USDC_CLASSIC],
+  [ChainId.CLASSIC]: [USDC_CLASSIC, USC_CLASSIC],
   [ChainId.CLASSIC_MORDOR]: [USDC_CLASSIC_MORDOR],
   [ChainId.GNOSIS]: [USDC_ETHEREUM_GNOSIS],
   [ChainId.MOONBEAM]: [USDC_MOONBEAM],
