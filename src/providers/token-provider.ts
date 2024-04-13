@@ -446,15 +446,6 @@ export const CEUR_CELO_ALFAJORES = new Token(
 );
 
 // Ethereum Classic Tokens
-export const USDC_CLASSIC = new Token(
-  ChainId.CLASSIC,
-  '', // TODO axelar address
-  6,
-  'USDC',
-  'USDC'
-);
-
-// Ethereum Classic Tokens
 export const USC_CLASSIC = new Token(
   ChainId.CLASSIC,
   '0xDE093684c796204224BC081f937aa059D903c52a', // USC address
@@ -464,7 +455,7 @@ export const USC_CLASSIC = new Token(
 );
 
 // Ethereum Classic Mordor Tokens
-export const USDC_CLASSIC_MORDOR = new Token(
+export const USC_CLASSIC_MORDOR = new Token(
   ChainId.CLASSIC_MORDOR,
   '0xDE093684c796204224BC081f937aa059D903c52a',
   6,

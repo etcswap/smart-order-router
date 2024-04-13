@@ -16,6 +16,7 @@ import {
   DAI_POLYGON_MUMBAI,
   DAI_SEPOLIA,
   USC_CLASSIC,
+  USC_CLASSIC_MORDOR,
   USDC_ARBITRUM,
   USDC_ARBITRUM_GOERLI,
   USDC_AVAX,
@@ -36,7 +37,6 @@ import {
   USDT_OPTIMISM,
   USDT_OPTIMISM_GOERLI,
   WBTC_GOERLI,
-  USDC_CLASSIC_MORDOR
 } from '../../../providers/token-provider';
 import { IV2PoolProvider } from '../../../providers/v2/pool-provider';
 import { ArbitrumGasData, IL2GasDataProvider, OptimismGasData, } from '../../../providers/v3/gas-data-provider';
@@ -69,7 +69,7 @@ export const usdGasTokensByChain: { [chainId in ChainId]?: Token[] } = {
   [ChainId.CELO]: [CUSD_CELO],
   [ChainId.CELO_ALFAJORES]: [CUSD_CELO_ALFAJORES],
   [ChainId.CLASSIC]: [USC_CLASSIC],
-  [ChainId.CLASSIC_MORDOR]: [USDC_CLASSIC_MORDOR],
+  [ChainId.CLASSIC_MORDOR]: [USC_CLASSIC_MORDOR],
   [ChainId.GNOSIS]: [USDC_ETHEREUM_GNOSIS],
   [ChainId.MOONBEAM]: [USDC_MOONBEAM],
   [ChainId.BNB]: [USDT_BNB, USDC_BNB, DAI_BNB],
